@@ -1,0 +1,12 @@
+{
+    "devDependencies": {
+        "@wordpress/scripts": "^30.17.0"
+    },
+    "dependencies": {
+        "firebase": "^11.8.1"
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    }
+}
