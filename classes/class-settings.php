@@ -45,7 +45,7 @@ class Settings {
 			esc_html__( 'Firebase Authentication', 'firebase-authentication' ),
 			'manage_options',
 			'firebase-authentication',
-			'firebase_auth_render_settings_page'
+			array( $this, 'firebase_auth_render_settings_page' )
 		);
 	}
 
@@ -77,7 +77,7 @@ class Settings {
 		add_settings_section(
 			'firebase_authentication_settings_section',
 			esc_html__( 'Firebase Authentication Settings', 'firebase-authentication' ),
-			'firebase_auth_render_settings_section',
+			array( $this, 'firebase_auth_render_settings_section' ),
 			'firebase-authentication'
 		);
 
