@@ -17,8 +17,6 @@ const sendAndVerifyToken = async (token) => {
     if (!res.ok) {
         throw new Error('Failed to verify token');
     }
-
-    console.log(res);
 };
 
 export { sendAndVerifyToken };
