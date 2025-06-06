@@ -61,7 +61,7 @@ class Settings {
 			'firebase_authentication_options',
 			'firebase_authentication_options',
 			array(
-				'sanitize_callback' => 'firebase_auth_sanitize_options',
+				'sanitize_callback' => array( $this, 'firebase_auth_sanitize_options' ),
 				'default'           => array(
 					'api_key'             => '',
 					'auth_domain'         => '',
